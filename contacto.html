@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Antunez">
+    <meta name="keywords" content="noticias de España, ciencia, deportes, cultura">
+    <title>Las Noticias | Contacto</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        h2,h3,h4,h5,h6,p{
+            font-family: serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 2px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/logotipo.jpg" alt="Logotipo Las Noticias" title="Las Noticias">
+        </a>
+        <h1>Las noticias</h1>
+        <p>Bienvenidos al sitio web</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="seccion1.html">Sección 1</a></li>
+            <li><a href="seccion2.html">Sección 2</a></li>
+            <li><a href="seccion3.html">Sección 3</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="dondeEstamos.html">¿Dónde estamos?</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contacto</h2>
+               <form action="contacto.php" method="post">
+                    <label for="nombre">Nombre</label> <br>
+                    <input type="text" name="nombre" id="nombre"> <br>
+
+                    <label for="email">Correo electrónico</label> <br>
+                    <input type="email" name="email" id="email"> <br>
+
+                    <label for="telefono">Teléfono</label> <br>
+                    <input type="number" name="telefono" id="telefono"> <br>
+
+                    <label for="mensaje">Mensaje</label> <br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea> <br>
+
+                    <input type="button" value="Enviar">
+               </form>         
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Fecha de actualización : 15 de junio de 2022. Actualizado por: <a href="mailto:leonardo.d.antunez@gmail.com">Leonardo Antúnez</a>
+        </p>
+    </footer>
+
+</body>
+</html>
