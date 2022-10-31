@@ -3,6 +3,8 @@ $(document).ready(function(){
     $('.carousel').slick({
         arrows: false,
         dots: true,
+        infinite: true,
+        autoplay: true,
     });
     $(".enlace_menu").mouseover(function(evt){
         $(this).animate({ deg: -10 },
