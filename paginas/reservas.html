@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo jQuery-ui</title>
+    <link rel="stylesheet" href="../js/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="../js/jquery-ui/jquery-ui.theme.css">
+    <link href="../js/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../css/sitio.css"/>
+</head>
+<body>
+    <header>
+        <h1>Página de ejemplo construida con jQuery-ui</h1>
+        <nav>
+            <ul class="sin-estilo">
+                <li class="enlace_menu"><a href="../index.html">Inicio</a></li>
+                <li class="enlace_menu"><a href="informacion.html">Información</a></li>
+                <li class="enlace_menu"><a href="reservas.html">Reservas</a></li>
+                <li class="enlace_menu"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="columnas-50" id="reservas">
+        <section>
+            <h2>Selecciona una fecha para hacer tu reserva:</h5>
+            <div class="datepicker"></div>
+        </section>
+        <section>
+            <form action="#" id="formularioReserva">
+                <div class="campo">
+                    <div class="elemento">
+                        <label for="fecha">Fecha</label>
+                    </div>
+                    <div class="elemento">
+                        <input required type="text" id="fecha" class="datepicker" name="fecha">
+                    </div>
+                </div>
+                <div class="campo">
+                    <div class="elemento">
+                        <label for="cantidad_personas">Cantidad de personas</label>
+                    </div>
+                    <div class="elemento">
+                        <input min="1" required type="number" id="cantidad_personas" class="" name="cantidad_personas">
+                    </div>
+                    
+                </div>
+
+                <div class="campo">
+                    <div class="elemento">
+                        <label for="fecha">Email</label>
+                    </div>
+                    <div class="elemento">
+                        <input required type="email" id="email" class="" name="email">
+                    </div>
+                    
+                </div>
+
+                <input type="submit" value="Envía">
+            </form>
+        </section>
+
+        
+        
+    </main>
+    <footer>
+        <h6>Cipsa (2022)</h6>
+        <h6>Curso de programación web</h6>
+    </footer>
+    <script src="../js/jquery/jquery.js"></script>
+    <script src="../js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../js/lightbox/js/lightbox.min.js"></script>
+    <script src="../js/jquery-validation/jquery.validate.min.js"></script>
+    <script src="../js/jquery-validation/localization/messages_es.js"></script>
+    <script src="../js/slick/slick.min.js"></script>
+    <script src="../js/sitio.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#formularioReserva").validate();
+        });
+    </script>
+
+</body>
+</html>
